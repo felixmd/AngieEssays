@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { EssayType } from '../types';
 import { SUGGESTED_TOPICS, ESSAY_TYPE_INFO } from '../data/topics';
 
@@ -74,7 +74,7 @@ export const TopicSelection: React.FC<TopicSelectionProps> = ({ essayType, onTop
                     type="text"
                     value={customTopic}
                     onChange={(e) => setCustomTopic(e.target.value)}
-                    onKeyPress={(e) => e.key === 'Enter' && handleCustomTopicSubmit()}
+                    onKeyDown={(e) => e.key === 'Enter' && handleCustomTopicSubmit()}
                     placeholder="e.g., My summer vacation experience"
                     className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-primary-500 focus:outline-none text-gray-900"
                     autoFocus

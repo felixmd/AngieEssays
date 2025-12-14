@@ -1,4 +1,3 @@
-import React from 'react';
 import { EssayFeedback, FinalAssessment } from '../types';
 
 interface FeedbackDisplayProps {

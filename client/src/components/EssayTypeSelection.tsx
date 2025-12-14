@@ -1,4 +1,3 @@
-import React from 'react';
 import { EssayType } from '../types';
 import { ESSAY_TYPE_INFO } from '../data/topics';
 

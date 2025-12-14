@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { EssayType } from './types';
 import { EssayTypeSelection } from './components/EssayTypeSelection';
 import { TopicSelection } from './components/TopicSelection';

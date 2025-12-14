@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { EssayType, EssayFeedback, FinalAssessment } from '../types';
 import { FeedbackDisplay } from './FeedbackDisplay';
 
