@@ -26,7 +26,7 @@ export const EssayEditor: React.FC<EssayEditorProps> = ({ essayType, topic, onBa
 
     setIsLoading(true);
     try {
-      const response = await fetch('http://localhost:3001/api/feedback', {
+      const response = await fetch('/api/feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -63,7 +63,7 @@ export const EssayEditor: React.FC<EssayEditorProps> = ({ essayType, topic, onBa
 
     setIsLoading(true);
     try {
-      const response = await fetch('http://localhost:3001/api/feedback', {
+      const response = await fetch('/api/feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
