@@ -104,12 +104,11 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'AngieWrites API is running' });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 AngieWrites server running on http://localhost:${PORT}`);
-  console.log(`📝 API endpoint: http://localhost:${PORT}/api/feedback`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 AngieWrites server running on port ${PORT}`);
+  console.log(`📝 API endpoint: /api/feedback`);
 
   if (!process.env.OPENAI_API_KEY) {
     console.warn('⚠️  WARNING: OPENAI_API_KEY not found in environment variables');
-    console.warn('   Please create a .env file with your OpenAI API key');
   }
 });
